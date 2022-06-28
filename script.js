@@ -40,12 +40,12 @@ const personalMovieDB = {
 console.log(personalMovieDB.count);
 //3
 
-const firstLastFilm = prompt('Один из последних просмотренных фильмов?', '');
-const firstGrade = prompt('На сколько оцените его?', '');
-const secondLastFilm = prompt('Один из последних просмотренных фильмов?', '');
-const secondGrade = prompt('На сколько оцените его?', '');
+const firstLastFilm = prompt('Один из последних просмотренных фильмов?', ''),
+      firstGrade = prompt('На сколько оцените его?', ''),
+      secondLastFilm = prompt('Один из последних просмотренных фильмов?', ''),
+      secondGrade = prompt('На сколько оцените его?', '');
 
 personalMovieDB.movies[firstLastFilm] = firstGrade;
 personalMovieDB.movies[secondLastFilm] = secondGrade;
 
-console.log(personalMovieDB.movies);
+console.log(personalMovieDB);
