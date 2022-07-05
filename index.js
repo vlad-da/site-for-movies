@@ -15,3 +15,17 @@ function reverse(str) {
 }
 
 reverse(someString);
+
+function fibo(num) {
+    const arr = [];
+    for (let i = 0; i < num; i++) {
+        arr[i] = i;
+        if (i >= 2) {
+            arr[i] = arr[i - 1] + arr[i - 2];
+        }
+    }
+    const res = arr.join(' ');
+    console.log(typeof(res));
+}
+
+fibo(3);
