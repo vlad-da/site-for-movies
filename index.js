@@ -1,3 +1,5 @@
+
+//переворот строки
 const someString = 'This is some strange string';
 
 function reverse(str) {
@@ -16,6 +18,7 @@ function reverse(str) {
 
 reverse(someString);
 
+// Фибоначи
 function fibo(num) {
     const arr = [];
     for (let i = 0; i < num; i++) {
@@ -29,3 +32,18 @@ function fibo(num) {
 }
 
 fibo(3);
+
+//Факториал - рекурсия
+function factorial(n) {
+    if (typeof(n) !== 'number' || !Number.isInteger(n)) {
+        return 'error';
+    } else if (n <= 0) {
+        return 1;
+    } else if ( n == 1) {
+        return n;
+    } else {
+        return n * factorial(n - 1);
+    }
+}
+
+console.log(factorial([]));
